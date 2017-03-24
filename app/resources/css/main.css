@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  font-size: 100%;
+  text-rendering: optimizeLegibility;
+  background: #f85032;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #f85032, #e73827);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f85032, #e73827);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.row {
+  max-width: 740px;
+  margin: 0 auto; }
+
+.center {
+  text-align: center; }
+
+*:focus {
+  outline: none; }
+
+::-webkit-input-placeholder {
+  color: #fff; }
+
+/*--------- HEADINGS ---------*/
+h1.title {
+  font-size: 2.8rem;
+  margin-top: 30px; }
+
+.task-name {
+  border: none;
+  font-size: 2rem;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40px;
+  background: transparent;
+  color: #fff; }
+
+.lengths {
+  text-align: center; }
+
+.box {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 50px; }
+  .box span {
+    cursor: pointer; }
+
+.break {
+  display: inline-block;
+  padding: 10px; }
+
+.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer; }
+  .circle .indicator {
+    text-transform: uppercase;
+    padding-top: 50px;
+    font-size: 2rem; }
+  .circle .timer {
+    font-size: 3.5rem;
+    margin-top: 80px; }
+
+.done {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px; }

@@ -1,13 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
         <!--build:css css/main.min.css-->
+        <link rel="stylesheet" href="vendors/css/grid.css">
         <link rel="stylesheet" href="resources/css/main.css">
         <!--endbuild-->
     </head>
     
     <body>
-        
+        <div class="container">
+            <div class="row">
+                <h1 class="center title">Pomodoro Timer</h1>
+                <div class="row">
+                    <input type="text" placeholder="Set task name" class="task-name"/>
+                </div>
+
+                <div class="row lengths">
+                    <div class="col span-1-of-2 box">
+                        <p>Break length</p>
+                        <span>&#45;</span><div class="break">5</div><span>&#43;</span>
+                    </div>
+                    <div class="col span-1-of-2 box">
+                        <p>Session length</p>
+                        <span>&#45;</span><div class="break">25</div><span>+</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="circle">
+                        <h3 class="indicator">Start</h3>
+                        <h2 class="timer">25:00</h2>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <p class="done">Pomodoro's done: <span class="done">0</span></p>
+                </div>
+
+            </div>
+        </div>
+
 
         <!--build:js js/main.min.js-->
         <script src="resources/js/index.js"></script>
