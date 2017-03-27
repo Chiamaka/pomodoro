@@ -14,7 +14,7 @@
     <body>
         <div class="container">
             <div class="row">
-                <h1 class="center title">Pomodoro Timer</h1>
+                <h1 class="center title">Pomodoro Timer <span class="info" id="js--info">&#8505;</span> </h1>
                 <div class="row">
                     <input type="text" placeholder="Set task name" class="task-name"/>
                 </div>
@@ -22,29 +22,30 @@
                 <div class="row lengths">
                     <div class="col span-1-of-2 box">
                         <p>Break length</p>
-                        <span>&#45;</span><div class="break">5</div><span>&#43;</span>
+                        <button id="js--break-minus">&#45;</button><time class="break-length" id="break-length"></time><button id="js--break-plus">&#43;</button>
                     </div>
                     <div class="col span-1-of-2 box">
                         <p>Session length</p>
-                        <span>&#45;</span><div class="break">25</div><span>+</span>
+                        <button id="js--session-minus">&#45;</button><time class="break-length" id="session-length"></time><button id="js--session-plus">+</button>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="circle">
-                        <h3 class="indicator">Start</h3>
-                        <h2 class="timer">25:00</h2>
+                    <div class="circle" id="js--circle">
+                        <h3 class="indicator" id="type">Work session</h3>
+                        <time id="timer"></time>
                     </div>
                 </div>
                 
                 <div class="row">
-                    <p class="done">Pomodoro's done: <span class="done">0</span></p>
+                    <p class="done">Created by <a href="https://github.com/Chiamaka">Chiamaka</a></p>
                 </div>
 
             </div>
         </div>
 
-
+        
+        <script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>
         <!--build:js js/main.min.js-->
         <script src="resources/js/index.js"></script>
         <!--endbuild-->

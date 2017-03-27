@@ -73,6 +73,7 @@ gulp.task('watch', ['browserSync', 'sass'], function() {
 });
 
 /* Build tasks */
+gulp.task('build', ['clean-dist', 'fonts', 'images', 'useref']);
 
 // gulp.task('build', function(callback) {
 //     runSequence('clean:dist','sass', ['useref', 'images', 'fonts'],

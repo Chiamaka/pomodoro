@@ -1,5 +1,6 @@
 $text-color: #fff;
-
+$red: #f85032;
+$black: #000;
 * {
 	margin: 0;
 	padding: 0;
@@ -62,12 +63,12 @@ h1.title{
 	font-size: 1.5rem;
 	font-weight: 700;
 	margin-top: 50px;
-	span {
+	button {
 		cursor: pointer;
 	}
 }
 
-.break {
+.break-length {
 	display: inline-block;
 	padding: 10px;
 
@@ -83,12 +84,13 @@ h1.title{
 	text-align: center;
 	cursor: pointer;
 	.indicator {
-		text-transform: uppercase;
+		text-transform: lowercase;
 		padding-top: 50px;
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
-	.timer {
+	#timer {
 		font-size: 3.5rem;
+		display: block;
 		margin-top: 80px;
 	}
 }
@@ -98,4 +100,28 @@ h1.title{
 	margin-top: 20px;
 	text-align: center;
 	margin-bottom: 20px;
+
+	a {
+		color: $black;
+	}
+}
+
+.info {
+	border: 2px solid #fff;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+.rules {
+	color: #000;
+	p {
+		padding: 10px;
+		text-align: left;
+		font-weight: 700;
+	}
+}
+
+.ok {
+	color: $text-color !important;
+	background-color: $red !important;
 }
